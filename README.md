@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/uVZXa1DG9h.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/RvRjkm6UkM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 Create account, sign in, post images from album or from camera, add caption and siaply username 
 # Parstagram - Part I
 
