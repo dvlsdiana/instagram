@@ -6,16 +6,54 @@
 //
 
 import UIKit
+import Parse
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //copy fromvideo 2 @1:07
+//        Parse.initialize(
+//            with: ParseClientConfiguration(block:
+//            { (configuration:
+//            ParseMutableClientConfiguration) -> Void
+//            in
+//            configuration.applicationId =
+//            "instagram"
+//            configuration.server = "https://whispering-stream-51370.heroku.com/parse"
+//
+//        })
+//
+//        )
+        
+        
+        //video 2 @1:40
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main",
+//                                    bundle: nil)
+//            let FeedNavigationController = main.instantiateViewController(identifier:
+//                                        "FeedNavigationController")
+//            
+//            window?.rootViewController = FeedNavigationController
+//            
+//        }
+        
+         //copy
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "uA42HsplGiQjaErNi3CHIboVWa8Rl7X7OpV5f45T" // <- UPDATE
+                    $0.clientKey = "MHHyRmWpOe2tdXPAo8CQr2VKssC23S6bSOgC1Skx" // <- UPDATE
+                    $0.server = "https://parseapi.back4app.com/"
+            }
+            Parse.initialize(with: parseConfig)
+        //end copy
         return true
     }
+    
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
